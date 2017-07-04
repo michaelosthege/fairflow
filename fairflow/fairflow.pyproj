@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c82567b9-8b08-4d06-b333-b254c26202d4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>dags\test_fairflow.py</StartupFile>
+    <StartupFile>dags\example_models.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dags\example_models.py" />
     <Compile Include="fairflow\core.py">
       <SubType>Code</SubType>
     </Compile>

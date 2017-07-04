@@ -8,6 +8,7 @@ export AIRFLOW_HOME=$afhome
 
 echo "Initializing airflow db"
 
+service mysql start
 airflow resetdb
 airflow initdb
 
