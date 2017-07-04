@@ -6,4 +6,4 @@ from . import utils
 
 from . core import FOperator
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"

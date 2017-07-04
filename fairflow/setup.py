@@ -23,6 +23,7 @@ setup(name = __packagename__,
       description="Functional airflow.",
       url="https://github.com/michaelosthege/fairflow",
       download_url = 'https://github.com/michaelosthege/fairflow/tarball/%s' % __version__,
+      install_requires = ["apache-airflow"],
       author="Michael Osthege",
       author_email="thecakedev@hotmail.com",
       copyright="(c) Copyrights 2017 Zymergen, Inc., Michael Osthege",
@@ -46,12 +47,16 @@ setup(name = __packagename__,
 #   python setup.py develop
 # from just outside of the package folder.
 
-# Uploading to pypi-test:
-#    python setup.py register -r pypitest
-#    python setup.py sdist upload -r pypitest
+########### How to upload
+# Make sure to commit with a version-number tag!!
+# >>> git tag [versionnumber]
+# >>> git push --tags
 
-# Uploading to pypi:
-#    python setup.py register -r pypi
-#    python setup.py sdist upload -r pypi
+# In the command line, navigate to the project directory
+# then run
+# >>> python setup.py sdist bdist_wheel
+# >>> twine upload dist/[yourproject-version].tar.gz
 
-
+#### References
+# https://stackoverflow.com/questions/40022710/how-am-i-supposed-to-register-a-package-to-pypi
+# http://peterdowns.com/posts/first-time-with-pypi.html
