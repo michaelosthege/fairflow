@@ -46,5 +46,12 @@ setup(name = __packagename__,
 #   python setup.py develop
 # from just outside of the package folder.
 
-# Uploading to an artifactory index:
-#    python setup.py sdist register -r artifactory upload -r artifactory
+# Uploading to pypi-test:
+#    python setup.py register -r pypitest
+#    python setup.py sdist upload -r pypitest
+
+# Uploading to pypi:
+#    python setup.py register -r pypi
+#    python setup.py sdist upload -r pypi
+
+
