@@ -260,3 +260,6 @@ paket-files/
 __pycache__/
 *.pyc
 /fairflow/unittests.cfg
+/fairflow/build
+/fairflow/dist
+/fairflow/fairflow.egg-info
